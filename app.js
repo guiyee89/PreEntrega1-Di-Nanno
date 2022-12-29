@@ -1,30 +1,45 @@
 let menu
 do {
-    menu = prompt(" 1- Purchase your Travel Plan \n 2- Cancel")
+    menu = prompt(" 1- Purchase your Travel Plan \n 2- Go to Website")
     menu = parseInt(menu)
-    switch (menu){
-        case 1: comprarPlan()
-        break
+    switch (menu) {
+        case 1: comprarViaje()
+            break
         case 2: alert("Bye!")
-        break
+            break
         default: alert("Invalid Option")
     }
-} while (menu !=2)
+} while (menu != 2);
 
-function comprarPlan() {
-    let plan = 0
-    alert("Select one of this travel packs")
-    Number (prompt(" 1- Sydney \n 2- Melbourne \n 3- Brisbane \n 4- Gold Coast \n 5- Cancel"))
+function comprarViaje() {
+    do {
+        alert("Select your destination")
+        let destino = prompt("1- Sydney \n 2- Melbourne \n 3- Brisbane \n 4- Gold Coast");
+        destino = parseInt(destino);
+        switch (destino) {
+            case 1: comprarServicios()
+                break
+            case 2: comprarServicios()
+                break
+            case 3: comprarServicios()
+                break
+            case 4: comprarServicios()
+                break
+            default: alert("Invalid Option")
+        }
+    } while (destino <= 1 || destino >= 4)
 
-    let servicios = alert("Choose your travel services")
-    prompt(" 1- Luggage \n 2- Insurance \n 3- Travel Planning \n 4- Customer Service \n 5- Cancel")
-
-    switch (servicios){
-        case 1: 
-        break
+    function comprarServicios() {
+        let servicios
+        alert("Select different services");
+        servicios = prompt("1- Luggage \n 2- Insurance \n 3- Travel Planning \n 4- Customer Service");
+        servicios = parseInt(servicios);
     }
-
-
 }
 
-    
+
+
+
+
+
+
