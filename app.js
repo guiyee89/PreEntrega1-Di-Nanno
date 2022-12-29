@@ -38,7 +38,7 @@ function comprarViaje() {
             servicios = prompt("1- Luggage \n 2- Insurance \n 3- Travel Planning \n 4- Customer Service \n\n 5- Done!");
             servicios = parseInt(servicios);
             switch (servicios) {
-                case 1: comprarServicios()   
+                case 1: comprarServicios()
                     break
                 case 2: comprarServicios()
                     break
@@ -50,12 +50,7 @@ function comprarViaje() {
                     break
                 default: alert("Invalid Option")
             }
+
         } while (servicios <= 1 || servicios >= 5)
     }
 }
-
-
-
-
-
-
