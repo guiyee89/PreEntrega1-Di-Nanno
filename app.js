@@ -14,7 +14,7 @@ do {
 
 function comprarViaje() {
     do {
-        alert("Select your destination")
+        alert("Select your destination for $1000")
         let destino = prompt("1- Sydney \n 2- Melbourne \n 3- Brisbane \n 4- Gold Coast");
         destino = parseInt(destino);
 
@@ -34,8 +34,8 @@ function comprarViaje() {
     function comprarServicios() {
         alert("Select one or more services")
         do {
-            let servicios
-            servicios = prompt("1- Luggage \n 2- Insurance \n 3- Travel Planning \n 4- Customer Service \n\n 5- Done!");
+            let servicios = 0
+            servicios = prompt(" 1- $75 Luggage \n 2- $100 Insurance \n 3- $150 Travel Planning \n 4- $150 Customer Service \n\n 5- Done!");
             servicios = parseInt(servicios);
             switch (servicios) {
                 case 1: comprarServicios()
