@@ -1,12 +1,11 @@
-
+const TOTAL = 0
 function menuPrincipal() {
-    let total = 0;
     let menu;
     do {
         menu = prompt(" Menu\n\n 1- Purchase a Travel Plan \n\n 2- Calculate Total Amount \n\n 3- Go to Website")
         menu = parseInt(menu)
         switch (menu) {
-            case 1: total = total + comprarDestino()
+            case 1: TOTAL = TOTAL + comprarDestino()
                 break;
             case 2: alert("Total amount for your plan is " + total)
                 total = 0
@@ -48,11 +47,28 @@ function comprarServicio() {
                 break
             case 2: servicio = servicio + 100
                 break
-            case 3: return servicio
+            case 3: servicio = servicio + totalCuenta()
                 break
             default: ("Invalid Option")
         }
     } while (menuServicio <= 1 || menuServicio >= 2)
+
+    return servicio;
+}
+
+function totalCuenta(){
+    let totalPack = TOTAL
+    let menuTotal
+    menuTotal = prompt(" 1- Calculate total amount \n\n 2- Go back to Menu")
+    menuTotal = parseInt(menuTotal)
+
+    switch(menuTotal){
+        case 1: alert("Total " + totalPack)
+        break
+        case 2: menuPrincipal()
+        break
+        default: alert("Invalid Option")
+    }
 }
 
 menuPrincipal()
