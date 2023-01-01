@@ -53,6 +53,7 @@ function comprarServicio() {
             default: ("Invalid Option")
         }
     } while (menuServicio <= 1 || menuServicio >= 2)
+    return servicio
 }
 
 menuPrincipal()
