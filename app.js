@@ -54,7 +54,7 @@ function comprarServicio() {
     alert("Selecciona diferentes servicios")
 
     do {
-        menuServicio = prompt(" 1- Equipaje $75 \n 2- Seguro de viaje $100 \n 3- Atencion al cliente $100 \n 4- Planificador de viajes $125 \n\n 5- Calcular total")
+        menuServicio = prompt(" 1- Equipaje $75 \n 2- Seguro de viaje $100 \n 3- Atencion al cliente $100 \n 4- Planificador de viajes $125 \n\n 5- Calcular total \n 6- Volver a menu principal")
         menuServicio = parseInt(menuServicio)
 
         switch (menuServicio) {
@@ -72,7 +72,7 @@ function comprarServicio() {
                 break
             case 5: alert("Podes seguir comprando o calcular el total " + total) 
                     return total
-                break
+            case 6: return total
             default: alert("Opcion Invalida")
         }
     } 
@@ -80,9 +80,6 @@ function comprarServicio() {
     return total
 }
 
-function calcTotal(){
-    alert("El total de la cuenta es " + TOTAL)
-}
 
 menuPrincipal()
 
