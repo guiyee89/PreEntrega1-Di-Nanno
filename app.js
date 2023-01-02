@@ -1,7 +1,7 @@
 let total = 0;
 
 function menuPrincipal() {
-    let total = 0;
+    
     let menu;
 
     do {
