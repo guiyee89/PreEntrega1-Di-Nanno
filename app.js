@@ -2,6 +2,7 @@
 function menuPrincipal() {
     let total = 0;
     let menu;
+
     do {
         menu = prompt(" Menu\n\n 1- Comprar pack de viaje \n 2- Calcular total \n\n 3- Ir a sitio web")
         menu = parseInt(menu)
@@ -15,7 +16,8 @@ function menuPrincipal() {
                 break;
             default: alert("Opcion Invalida")
         }
-    } while (menu != 3)
+    } 
+    while (menu != 3)
 }
 
 function comprarDestino() {
@@ -47,6 +49,7 @@ function comprarServicio() {
     let servicio = 0;
     let menuServicio
     alert("Selecciona diferentes servicios")
+
     do {
         menuServicio = prompt(" 1- Equipaje $75 \n 2- Seguro de viaje $100 \n 3- Atencion al cliente $100 \n 4- Planificador de viajes $125 \n\n 5- Listo! Volver a menu")
         menuServicio = parseInt(menuServicio)
@@ -68,7 +71,8 @@ function comprarServicio() {
                 return servicio
             default: alert("Opcion Invalida")
         }
-    } while (menuServicio != 5)
+    } 
+    while (menuServicio != 5)
     return servicio
 }
 
