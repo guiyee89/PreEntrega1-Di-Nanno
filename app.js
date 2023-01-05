@@ -79,7 +79,7 @@ function comprarServicio() {
         }
     }
     while (menuServicio != 5)
-    return total
+    // return total
 }
 
 
